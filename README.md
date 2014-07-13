@@ -3,6 +3,8 @@ Autodislocker
 
 Mount BitLocker encrypted partitions under Linux.
 
+Install
+-------
 
 0.) Download and install dislocker for linux ( http://www.hsc.fr/ressources/outils/dislocker/ )
 
@@ -18,7 +20,7 @@ Use non-default password:
 
 - sudo sh autodislocker.sh -p XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX-XXXXXX
 
-Use .bek file:
+Use .bek file: ( not tested :( )
 
 - sudo sh autodislocker.sh -f /path/to/bek/file.bek
 
@@ -26,6 +28,6 @@ Unmount:
 
 - sudo sh autodislocker.sh -u
 
-The default block device is sdb! If you want to use sdX you can use the -d command line argument.
+The default block device is sdb! If you want to use sdX you can use the -d argument.
 
 - sudo sh autodislocker.sh -d sdX
